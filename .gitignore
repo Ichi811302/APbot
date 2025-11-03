@@ -1,0 +1,8 @@
+# 環境変数ファイル
+.env
+
+# Pythonキャッシュ
+__pycache__/
+
+# OSごとの不要ファイル
+.DS_Store
