@@ -5,7 +5,12 @@ keep_alive()
 import discord
 from discord.ext import commands
 
-TOKEN = "MTQzMzIxMzI4MzA5NTI4MTgzNw.Gjxcc1.gT-qgV3TnjltRyJJ-9Yk_YFBSvA-AKn1Usgw4E"
+import os
+from dotenv import load_dotenv
+
+load_dotenv()
+
+TOKEN = os.getenv("DISCORD_TOKEN")
 
 intents = discord.Intents.default()
 intents.message_content = True  # メッセージ内容を取得するため必要
